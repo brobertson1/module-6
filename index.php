@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Head PHP include -->
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Advanced Web Recipes</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
+<?php
+    include 'head.php';
+?>
 <body>
 <div class="wrapper">
-    <!-- Header PHP include -->
-
+    <?php
+        include 'header.php';
+    ?>
     <main>
         <!-- TODO Add PHP to get recipes from database here -->
 
         <h2>Try One of Our Recipes!</h2>
-
-        <div id="sortable-blog-list">
+        <!-- The database inserted recipe list -->
+        <div id="sortable-recipe-list">
             <input class="search" placeholder="Search" />
             <button class="sort" data-sort="title">Sort</button>
-            <ul class="list post-list">
+            <ul class="list recipe-list">
                 <!-- TODO Add PHP to generate recipe titles list here. -->
                 <!-- Code already set up for List.js integration -->
                 <li>Chocolate Cake</li>
@@ -32,8 +28,11 @@
         </div>
 
     </main>
-    <!-- Footer PHP include -->
-    <!-- Scripts PHP include -->
+
+    <?php
+        include 'footer.php';
+        include 'scripts.php';
+    ?>
 
 </div>
 </body>

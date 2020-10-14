@@ -1,0 +1,86 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+body {
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+}
+
+.wrapper {
+    min-height: calc(100vh - 70px);
+}
+
+
+header {
+    background-color: #22348C;
+    color: white;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-content h1 {
+    margin: 0;
+}
+
+.header-content a {
+    padding: 10px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.header-content a:hover {
+    color: #22348C;
+    background-color: #fff;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.recipe-list {
+    list-style-type: none;
+    padding: 0 0 10px 0;
+    margin-left: 40px;
+}
+
+.recipe-list li {
+    border-bottom: 1px dashed rgba(148, 148, 148, 0.5);
+    margin-bottom: 10px;
+}
+
+.recipe-list li a {
+    text-decoration: none;
+    color: #22348C;
+    font-size: 1.2rem;
+}
+
+.recipe-list li a:hover {
+    color: #516eff;
+}
+
+footer {
+    background-color: red;
+    color: white;
+    margin: 20px auto 0 auto;
+    padding: 5px 0;
+    /* position: fixed;
+    left: 0;
+    bottom: 0; */
+    width: 100%;
+    height: 50px;
+}
+
+footer p {
+    text-align: center;
+}
