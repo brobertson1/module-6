@@ -8,12 +8,12 @@ body {
 }
 
 .wrapper {
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 60px);
 }
 
 
 header {
-    background-color: #22348C;
+    background-color: #2489b9;
     color: white;
     padding: 20px 0;
 }
@@ -36,6 +36,7 @@ header {
     color: #fff;
     margin-left: 10px;
     text-decoration: none;
+    border-radius: 5px;
 }
 
 .header-content a:hover {
@@ -44,7 +45,7 @@ header {
 }
 
 main {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -70,9 +71,9 @@ main {
 }
 
 footer {
-    background-color: red;
+    background-color: #2489b9;
     color: white;
-    margin: 20px auto 0 auto;
+    margin: 0 auto;
     padding: 5px 0;
     /* position: fixed;
     left: 0;

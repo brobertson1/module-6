@@ -3,7 +3,9 @@
 <?php
     include 'head.php';
 ?>
+
 <body>
+
 <div class="wrapper">
     <?php
         include 'header.php';
@@ -28,12 +30,12 @@
         </div>
 
     </main>
+</div>
 
     <?php
         include 'footer.php';
         include 'scripts.php';
     ?>
 
-</div>
 </body>
 </html>

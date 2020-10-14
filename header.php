@@ -1,8 +1,7 @@
 <header>
-    <div class="header-content">
+    <nav class="header-content">
+        <a href="index.php">Home</a>
         <h1>Advanced Web Recipes</h1>
-        <?php
-            include 'nav.php';
-        ?>
-    </div>
+        <a href="recipe-submission.php">Submit Recipe</a>
+    </nav>
 </header>
