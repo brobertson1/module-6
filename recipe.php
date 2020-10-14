@@ -5,6 +5,7 @@
 ?>
 <body>
 
+<div class="wrapper">
     <?php
         include 'header.php';
     ?>
@@ -29,6 +30,7 @@
             </div>
         </div>
     </main>
+</div>
 
     <?php
         include 'footer.php';

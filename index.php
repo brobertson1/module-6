@@ -17,7 +17,7 @@
         <!-- The database inserted recipe list -->
         <div id="sortable-recipe-list">
             <input class="search" placeholder="Search" />
-            <button class="sort" data-sort="title">Sort</button>
+            <button class="sort sort-button" data-sort="title">Sort</button>
             <ul class="list recipe-list">
                 <!-- TODO Add PHP to generate recipe titles list here. -->
                 <!-- Code already set up for List.js integration -->

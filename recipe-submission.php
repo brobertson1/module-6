@@ -4,7 +4,7 @@
     include 'head.php';
 ?>
 <body>
-
+<div class="wrapper">
     <?php
         include 'header.php';
     ?>
@@ -17,10 +17,10 @@
             <!-- The textareas can be replaced with divs to use the Ace HTML editor -->
             <textarea name="ingredients" id="ingredients" placeholder="Ingredients"></textarea>
             <textarea name="directions" id="directions" placeholder="Directions"></textarea>
-
             <input type="submit" class="button" id="submit" value="Submit">
         </form>
     </main>
+</div>
 
     <?php
         include 'footer.php';
