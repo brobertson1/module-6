@@ -21,7 +21,7 @@
             <ul class="list recipe-list">
                 <!-- TODO Add PHP to generate recipe titles list here. -->
                 <!-- Code already set up for List.js integration -->
-                <li>Chocolate Cake</li>
+                <a href="recipe.php"><li>Chocolate Cake</li></a>
                 <li>Baked Ziti</li>
                 <li>Chikcen Piccata</li>
                 <li>Zucchini Bread</li>
