@@ -118,3 +118,62 @@ footer p {
 .recipe-directions {
     line-height: 1.4rem;
 }
+
+
+/* ================================= 
+  Recipe Submission Page Styles
+==================================== */
+
+.recipe-submission-header {
+    margin-bottom: 40px;
+}
+
+.recipe-submission-form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+input[type=text] {
+    display: inline-block;
+    height: 56px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #eff0f1;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+textarea {
+    display: inline-block;
+    height: 150px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #eff0f1;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #f56324;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: 1px solid #f56324;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 30px;
+    box-shadow: 3px 5px 3px 2px rgba(187, 187, 187, 0.5);
+    transition: background-color .4s ease-in, transform .2s ease-in;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #f56324;
+    transform: scale(.9);
+}
