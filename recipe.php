@@ -11,6 +11,20 @@
     ?>
     <main>
     <!-- TODO- PHP to get recipe details from database -->
+    <?php
+            function getRecipeDetailsFromDatabase(){
+
+                $recipeTitle = rawurldecode($_GET["title"]);
+
+                include_once 'includes/db_connect.php';
+                $sql = "SELECT * FROM posts WHERE title='" . $recipeTitle . "'";
+                $result = mysqli_query($conn, $sql);
+
+                $recipeDetails = mysqli_fetch_assoc($result);
+                return $recipeDetails;
+            }
+        ?>
+
         <h2 class="recipe-title">Test Recipe</h2>
         <div class="recipe-author">
             <p>Firstname Lastname</p>
