@@ -1,3 +1,7 @@
+<?php
+ini_set('display_errors', 1);
+?>
+
 <header>
     <nav class="header-content">
         <a href="index.php">Home</a>

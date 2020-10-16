@@ -10,8 +10,9 @@
     ?>
 
     <main>
+
         <h2 class="recipe-submission-header">Add a Recipe to Our Cookbook!</h2>
-        <form method="POST" class="recipe-submission-form">
+        <form action="submit-recipe.php" method="POST" class="recipe-submission-form">
             <input type="text" placeholder="Title" id="title" name="title">
             <input type="text" placeholder="Author" id="author" name="author">
             <!-- The textareas can be replaced with divs to use the Ace HTML editor -->
