@@ -13,13 +13,17 @@
     <!-- TODO- PHP to get recipe details from database -->
     <?php
         function getRecipeDetailsFromDatabase() {
-            $recipeTitle=rawurldecode($_GET["title"]);
-            include_once'db_connect.php';
-            $sql="SELECT * FROM posts WHERE title='" . $recipeTitle . "'";
+            $recipeTitle = rawurldecode($_GET["title"]);
+            
+            include_once 'db_connect.php';
+            $sql = "SELECT * FROM posts WHERE title='" . $recipeTitle . "'";
             $result = mysqli_query($conn, $sql);
+
+            $recipeDetails = mysqli_fetch_assoc($result);
             return $recipeDetails;
         }
     ?>
+<div>
     <?php
         $recipeDetails = getRecipeDetailsFromDatabase();
     ?>
@@ -32,15 +36,16 @@
             <div class="ingredients-col">
                 <h3>Ingredients</h3>
                 <div class="recipe-ingredients">
-                    <?php echo $recipeDetails ['ingredients'] ?>
+                    <?php echo $recipeDetails['ingredients']; ?>
                 </div>
             </div>
             <div class="directions-col">
                 <h3>Directions</h3>
                 <div class="recipe-directions">
-                    <?php echo $recipeDetails ['directions'] ?>
+                    <?php echo $recipeDetails ['directions']; ?>
                 </div>
             </div>
+        </div>
         </div>
     </main>
 </div>
