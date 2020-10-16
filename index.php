@@ -14,9 +14,15 @@
         <!-- TODO Add PHP to get recipes from database here -->
         <?php
             function getRecipeTitleFromDatabase(){
-                $recipeTitle = array("Baked ziti", "Chicken Piccata", "Cinnamon Scones");
-                return $recipeTitle;
+                include_once 'db_connect.php';
+                $sql = "SELECT title FROM posts";
+                $result = mysqli_query($conn, $sql);
 
+                $recipeTitle = array();
+                while($row = mysqli_fetch_assoc($result)){
+                    array_push($recipeTitle, $row['title']);
+                }
+            return $recipeTitle;
             }
         ?>
    

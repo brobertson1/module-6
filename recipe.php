@@ -13,10 +13,10 @@
     <!-- TODO- PHP to get recipe details from database -->
     <?php
         function getRecipeDetailsFromDatabase() {
-            $recipeDetails = array ('title' => 'Baked Ziti',
-                                    'author' => 'Becca R',
-                                    'ingredients' => 'pasta, sauce, cheese',
-                                    'directions' => 'cook pasta, mix in sauce, put in a pan, top with cheese, bake for 30 min, enjoy');
+            $recipeTitle=rawurldecode($_GET["title"]);
+            include_once'db_connect.php';
+            $sql="SELECT * FROM posts WHERE title='" . $recipeTitle . "'";
+            $result = mysqli_query($conn, $sql);
             return $recipeDetails;
         }
     ?>
