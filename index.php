@@ -39,7 +39,7 @@
                     $recipeTitle = getRecipeTitleFromDatabase();
 
                     foreach($recipeTitle as $recipeTitle) {
-                        echo "<li><a href='recipe.php?title=" . $recipeTitle . "'>" . $recipeTitle . "</a></li>";
+                        echo "<li><a href='recipe.php?title=" . $recipeTitle . "' class='title'>" . $recipeTitle . "</a></li>";
                     }
                 ?>
                 
