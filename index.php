@@ -12,7 +12,14 @@
     ?>
     <main>
         <!-- TODO Add PHP to get recipes from database here -->
+        <?php
+            function getRecipeTitleFromDatabase(){
+                $recipeTitle = array("Baked ziti", "Chicken Piccata", "Cinnamon Scones");
+                return $recipeTitle;
 
+            }
+        ?>
+   
 
         <h2>Try One of Our Recipes!</h2>
         <!-- The database inserted recipe list -->
@@ -20,14 +27,19 @@
             <input class="search" placeholder="Search" />
             <button class="sort sort-button" data-sort="title">Sort</button>
             <ul class="list recipe-list">
-                <!-- TODO Add PHP to generate recipe titles list here. -->
-            
+
+            <!-- PHP to generate recipe titles list here. -->
+                <?php
+                    $recipeTitle = getRecipeTitleFromDatabase();
+
+                    foreach($recipeTitle as $recipeTitle) {
+                        echo "<li><a href='recipe.php?title=" . $recipeTitle . "'>" . $recipeTitle . "</a></li>";
+                    }
+                ?>
+                
+                 
                 <!-- Code already set up for List.js integration -->
-                <a href="recipe.php"><li>Chocolate Cake</li></a>
-                <li>Baked Ziti</li>
-                <li>Chikcen Piccata</li>
-                <li>Zucchini Bread</li>
-                <li>Cinnamon Scones</li>
+                
             </ul>
         </div>
 
