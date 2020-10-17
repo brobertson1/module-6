@@ -29,6 +29,9 @@
         <div class="recipe-author">
             <p><?php echo $recipeDetails["author"]; ?></p>
         </div>
+        <div class="recipe-description">
+            <p><?php echo $recipeDetails["description"]; ?></p>
+        </div>
         <div class="recipe-content">
             <div class="ingredients-col">
                 <h3>Ingredients</h3>
