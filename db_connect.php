@@ -3,7 +3,7 @@
 $dbServer = "localhost";
 $dbUsername = "root";
 $dbPassword = "root";    
-$dbName = "awp_recipes";
+$dbName = "advance3_recipes";
 
 $conn = mysqli_connect($dbServer,$dbUsername,$dbPassword,$dbName);
 
