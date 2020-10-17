@@ -137,15 +137,24 @@ footer p {
     margin-top: .5rem;
 }
 
+.recipe-description {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
 .recipe-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .ingredients-col,
 .directions-col {
-    width: 45%;
+    width: 49%;
 }
 
 .recipe-ingredients,
@@ -189,6 +198,10 @@ textarea {
     margin-bottom: 25px;
     box-sizing: border-box;
     padding: 15px;
+}
+
+#description {
+    height: 90px;
 }
 
 .button {
